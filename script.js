@@ -13,8 +13,10 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+
 // Generate Password Function to generate new password
 function generatePassword() {
+
   var password = "";
   var lowercase = "abcdefghijklmnopqrstuvwxyz";
   var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -26,7 +28,7 @@ function generatePassword() {
     var prompt2 = prompt("Enter the character type: lowercase, uppercase, numeric, special.");
   }
   else {
-    password ="Please enter the correct length of password between 8 to 128";
+    password = "Please enter the correct length of password between 8 to 128";
     return password;
   }
   
@@ -35,7 +37,7 @@ function generatePassword() {
   var res = prompt2.split(",");
   var charTypes = "";
 
-    for(var l = 0; l <= res.length; l++){
+    for(var l = 0; l <= res.length; l++) {
       if(res[l] == "lowercase") {
         charTypes += lowercase;
       }
@@ -53,15 +55,16 @@ function generatePassword() {
       }
     }
 
-    for(var i = 0, n= charTypes.length; i < prompt1; i++) {
+    for(var i = 0, n = charTypes.length; i < prompt1; i++) {
       var count = Math.floor((Math.random() * charTypes.length) + 0);
       password += charTypes.charAt(count);
     }
     password = "Your Generated Password is: " + password;
     return password;
   }
+
   else {
-    password ="Please type atleast one character type for password";
+    password = "Please type atleast one character type for password";
     return password;
   }
 }
