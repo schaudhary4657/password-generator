@@ -1,1 +1,5 @@
 # week3-homework-password-generator
+
+Passwords are a real security threat. So creating a secure and reliable password is very important, and this is where a password generator can help. This project allows us to generate random passwords. This password generator is a tool that creates a password automatically based on the criteria that a user set to create random passwords every time. This project of password generator uses a combination of alphabets uppercase and lowercase, numbers, and symbols to create an arbitrary string of characters i.e., password that does not resemble any words or names.
+
+This password generator is written on JavaScript-based on HTML and CSS. This project meets the acceptance criteria, like when the user clicks the button to generate a password, the user is presented with prompts of standards for the password. The password generator consists of some criteria like the length of the password should be between 8 and 128, and the user should select at least one character type. Finally, when the user answers all the prompts, then the random password is generated based on the criteria set by the user and is shown to the user.
